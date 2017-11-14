@@ -10,3 +10,9 @@ function fuzzyMatch(drivers, string) {
     return element.startsWith(string);
   });
 }
+
+function matchName(drivers, string) {
+  return drivers.filter(function(element) {
+    return element.name === string;
+  });
+}
