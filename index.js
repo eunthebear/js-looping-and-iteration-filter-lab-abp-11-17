@@ -4,3 +4,9 @@ function findMatching(drivers, string) {
     return element.toUpperCase() === string.toUpperCase();
   });
 }
+
+function fuzzyMatch(drivers, string) {
+  return drivers.filter(function(element) {
+    return element.startsWith(string);
+  });
+}
